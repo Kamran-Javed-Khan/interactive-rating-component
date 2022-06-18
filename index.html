@@ -15,9 +15,11 @@
       <!-- Rating state start -->
       <div class="inner-card rating-state-card display-rating-state" id="ratingCard">
         <div>
-            <span class="image-border">
-                <img src="images/icon-star.svg" alt="Star Icon">
-            </span>
+            <div class="image-outer-box">
+                <span class="image-border">
+                    <img src="images/icon-star.svg" alt="Star Icon">
+                </span>
+            </div>
             <div class="content">
                 <h2>How did we do?</h1>
                     <p>
@@ -34,9 +36,7 @@
             <button onclick="setRating(5)">5</button>
         </div>
 
-        <div class="grid">
-            <button onclick="submit()">Submit</button>
-        </div>
+        <button class="submit-btn-styling" onclick="submit()">SUBMIT</button>
     </div>
     <!-- Rating state end -->
 
@@ -54,9 +54,9 @@
     <!-- Thank you state end -->
   </div>
   
-  <div class="attribution center">
+  <!-- <div class="attribution center">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Kamran Khan</a>.
-  </div>
+  </div> -->
 </body>
 </html>
