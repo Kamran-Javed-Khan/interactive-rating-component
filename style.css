@@ -16,6 +16,7 @@ html {
     display: grid;
     place-content: center;
     background: var(--very-dark-blue);
+    font-size: 15px;
 }
 
 .grid {
@@ -36,12 +37,15 @@ html {
 .inner-card {
     background-image: var(--gradient);
     padding: 2rem;
-    width: 22rem;
     border-radius: 2rem;
 }
 
+@media (min-width: 420px) {
+    .inner-card { width: 22rem; }
+}
+
 .image-outer-box {
-    padding-bottom: 2em;
+    padding-bottom: 1.5em;
 }
 
 .image-border {
@@ -65,7 +69,6 @@ html {
 h2 { color: var(--white); }
 
 p {
-    font-size: 15px;
     line-height: 1.8em;
     color: var(--light-grey);
 }
@@ -76,7 +79,22 @@ p {
 
 .display-thank-you-state { display: none; }
 
-#selectedRating { color: var(--orange); }
+#selectedRating {
+    color: var(--orange);
+    background: var(--dark-blue);
+    border-radius: 2rem;
+    padding: 0.2rem 1rem;
+}
+
+.selection-style {
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+}
+
+.get-in-touch {
+    padding: 0 0.5rem;
+}
 
 .flex button {
     font-family: 'Overpass', serif;
@@ -87,6 +105,24 @@ p {
     height: 3rem;
     background: var(--dark-blue);
     border: none;
+    font-weight: var(--semi-bold);
+}
+
+@media (max-width: 280px) {
+    .flex button {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+.flex button:hover {
+    color: var(--white);
+    background: var(--light-grey);
+}
+
+.flex button:focus {
+    color: var(--white);
+    background: var(--orange);
 }
 
 .submit-btn-styling {
@@ -99,4 +135,10 @@ p {
     width: 100%;
     letter-spacing: 0.2rem;
     border: none;
+    font-weight: var(--semi-bold);
+}
+
+.submit-btn-styling:hover {
+    color: var(--orange);
+    background: var(--white);
 }
